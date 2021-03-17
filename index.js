@@ -1,6 +1,9 @@
 import MyArray from "./Estructuras/array.js";
 import HashTable from "./Estructuras/HashTable.js";
 import MySinglyLinkedList from "./Estructuras/singly.js";
+import MyDoublyLinkedList from "./Estructuras/doubly.js";
+import MyStack from "./Estructuras/stack.js";
+import Queue from "./Estructuras/queue.js";
 
 /* let myArray = new MyArray();
 
@@ -50,7 +53,7 @@ console.log(myHastTable.remove("Mariana"));
 
 console.log(myHastTable.getAllKeys()); */
 
-let myLinkedList = new MySinglyLinkedList(2);
+/* let myLinkedList = new MySinglyLinkedList(2);
 
 console.log(myLinkedList);
 
@@ -65,4 +68,82 @@ console.log(myLinkedList);
 
 console.log(myLinkedList.insert(3, 3));
 
-console.log(myLinkedList.remove(5));
+console.log(myLinkedList.remove(5)); */
+
+/* let mydoublyList = new MyDoublyLinkedList(2);
+
+console.log(mydoublyList);
+
+console.log(mydoublyList.append(3));
+
+console.log(mydoublyList.prepend(0));
+
+mydoublyList.show();
+
+console.log(mydoublyList.insert(2, 9));
+
+mydoublyList.show();
+
+console.log(mydoublyList.insert(0, 56));
+
+mydoublyList.show();
+
+console.log(mydoublyList.insert(3, 100));
+
+mydoublyList.show(); */
+
+/* const myStack = new MyStack();
+
+myStack.push(45);
+myStack.push(23);
+myStack.push(67);
+
+console.log(myStack);
+
+console.log(myStack.peek());
+console.log(myStack.peek());
+console.log(myStack.peek());
+
+myStack.pop();
+
+myStack.push(66);
+myStack.push(89);
+
+console.log(myStack);
+
+myStack.pop();
+myStack.pop();
+
+console.log(myStack);
+
+myStack.pop();
+
+console.log(myStack);
+
+myStack.pop();
+
+console.log(myStack); */
+
+const queue = new Queue();
+
+queue.enqueue(93);
+console.log(queue.peek());
+queue.enqueue(45);
+console.log(queue.peek());
+queue.enqueue(21);
+console.log(queue.peek());
+console.log(queue.dequeue());
+queue.enqueue(34);
+console.log(queue.peek());
+queue.enqueue(78);
+console.log(queue.peek());
+console.log(queue.dequeue());
+queue.enqueue(100);
+console.log(queue.peek());
+
+console.log(queue);
+
+console.log(queue.dequeue());
+console.log(queue.dequeue());
+console.log(queue.dequeue());
+/* console.log(queue.dequeue()); */
