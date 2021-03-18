@@ -4,6 +4,8 @@ import MySinglyLinkedList from "./Estructuras/singly.js";
 import MyDoublyLinkedList from "./Estructuras/doubly.js";
 import MyStack from "./Estructuras/stack.js";
 import Queue from "./Estructuras/queue.js";
+import BinarySearchTree from "./Estructuras/tree.js";
+import Graph from "./Estructuras/graphs.js";
 
 /* let myArray = new MyArray();
 
@@ -124,9 +126,9 @@ myStack.pop();
 
 console.log(myStack); */
 
-const queue = new Queue();
+/* const queue = new Queue(); */
 
-queue.enqueue(93);
+/* queue.enqueue(93);
 console.log(queue.peek());
 queue.enqueue(45);
 console.log(queue.peek());
@@ -145,5 +147,38 @@ console.log(queue);
 
 console.log(queue.dequeue());
 console.log(queue.dequeue());
-console.log(queue.dequeue());
+console.log(queue.dequeue()); */
 /* console.log(queue.dequeue()); */
+
+/* const tree = new BinarySearchTree();
+tree.insert(10);
+
+tree.insert(4);
+tree.insert(20);
+tree.insert(2);
+tree.insert(8);
+tree.insert(7);
+console.log(tree);
+console.log(tree.search(6));
+console.log(tree.search(8)); */
+
+const graph = new Graph();
+
+// Vértices
+graph.addVertice("1");
+graph.addVertice("3");
+graph.addVertice("4");
+graph.addVertice("5");
+graph.addVertice("6");
+graph.addVertice("8");
+
+// Conexiones
+graph.addConex(8, 4);
+graph.addConex(4, 1);
+graph.addConex(1, 3);
+graph.addConex(1, 6);
+graph.addConex(3, 6);
+graph.addConex(3, 5);
+graph.addConex(5, 4);
+
+console.log(graph);
